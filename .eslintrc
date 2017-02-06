@@ -1,17 +1,81 @@
 {
-  "extends": ["standard", "standard-react"],
-  "parser": "babel-eslint",
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "standard-react"
+  ],
+  "plugins" : [
+    "flowtype",
+    "react-intl"
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "globals" : {
+    "__TEST__"     : false,
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__BASENAME__" : false,
+    "__VERSION__"  : false,
+  },
   "rules": {
-    "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
-    "comma-dangle": [2, "only-multiline"],
-    "eqeqeq": [2, "smart"],
-    "generator-star-spacing": 0,
-    "jsx-quotes": [2, "prefer-double"],
-    "react/prop-types": 0,
-    "react/self-closing-comp": 0,
-    "react/jsx-no-bind": 0,
-    "react/jsx-space-before-closing": 0,
-    "react/no-unescaped-entities": [2, {forbid: [">", "}"]}],
-    "space-before-function-paren": 0
+    "semi" : [2, "never"],
+    "space-infix-ops": 0,
+    "max-len": [2, 120, 2],
+    "flowtype/boolean-style": [
+      2,
+      "boolean"
+    ],
+    "flowtype/define-flow-type": 1,
+    "flowtype/delimiter-dangle": [
+      2,
+      "never"
+    ],
+    "flowtype/generic-spacing": [
+      2,
+      "never"
+    ],
+//    "flowtype/no-weak-types": 2,
+//    "flowtype/require-parameter-type": 2,
+//    "flowtype/require-return-type": [
+//      2,
+//      "always",
+//      {
+//        "annotateUndefined": "never"
+//      }
+//    ],
+    "flowtype/require-valid-file-annotation": 2,
+    "flowtype/semi": [
+      2,
+      "never"
+    ],
+    "flowtype/space-after-type-colon": [
+      2,
+      "always"
+    ],
+    "flowtype/space-before-generic-bracket": [
+      2,
+      "never"
+    ],
+    "flowtype/space-before-type-colon": [
+      2,
+      "never"
+    ],
+    "flowtype/type-id-match": [
+      2,
+      "^([A-Z][a-z0-9]+)+Type$"
+    ],
+    "flowtype/union-intersection-spacing": [
+      2,
+      "always"
+    ],
+    "flowtype/use-flow-type": 1,
+    "flowtype/valid-syntax": 1,
+    "react-intl/string-is-marked-for-translation": 1
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
   }
 }
