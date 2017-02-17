@@ -17,6 +17,7 @@
     "__PROD__"     : false,
     "__BASENAME__" : false,
     "__VERSION__"  : false,
+    "FAW_API_URL"  : false
   },
   "rules": {
     "semi" : [2, "never"],
