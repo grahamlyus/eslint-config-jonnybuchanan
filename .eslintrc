@@ -74,7 +74,10 @@
     ],
     "flowtype/use-flow-type": 1,
     "flowtype/valid-syntax": 1,
-    "react-intl/string-is-marked-for-translation": 1
+    "react-intl/string-is-marked-for-translation": 1,
+    "redux-saga/no-yield-in-race": 2,
+    "redux-saga/yield-effects": 2,
+    "redux-saga/no-unhandled-errors": 1
   },
   "settings": {
     "flowtype": {
