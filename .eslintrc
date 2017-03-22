@@ -6,7 +6,8 @@
   ],
   "plugins" : [
     "flowtype",
-    "react-intl"
+    "react-intl",
+    "redux-saga"
   ],
   "env"     : {
     "browser" : true

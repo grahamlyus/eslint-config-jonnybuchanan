@@ -27,6 +27,7 @@
     "eslint-plugin-promise": "3.4.0",
     "eslint-plugin-react": "6.9.0",
     "eslint-plugin-react-intl": "^1.0.2",
+    "eslint-plugin-redux-saga": "^0.3.0",
     "eslint-plugin-standard": "2.0.1"
   },
   "repository": {
